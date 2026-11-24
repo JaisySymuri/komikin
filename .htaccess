@@ -1,0 +1,6 @@
+# KOMIKIN shared-hosting protections
+Options -Indexes
+
+<FilesMatch "^(\.env|composer\.(json|lock)|package(-lock)?\.json|README\.txt|PHASE[0-9].*\.txt|.*\.(sql|zip|bak|old|log))$">
+    Require all denied
+</FilesMatch>

@@ -1,0 +1,44 @@
+:root {
+    --komikin-navy: #172033;
+    --komikin-orange: #ff8a32;
+    --komikin-bg: #f5f7fb;
+}
+body { background: var(--komikin-bg); color: var(--komikin-navy); min-height: 100vh; }
+.komikin-navbar { background: var(--komikin-navy); }
+.brand-dot { color: var(--komikin-orange); }
+.btn-komikin { background: var(--komikin-orange); border-color: var(--komikin-orange); color: #1c2434; font-weight: 700; }
+.btn-komikin:hover { background: #f4771c; border-color: #f4771c; color: #1c2434; }
+.auth-card, .stat-card { background: #fff; border: 1px solid #e7eaf0; border-radius: 18px; padding: 28px; box-shadow: 0 8px 28px rgba(23,32,51,.05); }
+.auth-card { margin: 24px 0; }
+.eyebrow { color: #e66d18; font-size: .72rem; font-weight: 800; letter-spacing: .12em; }
+.form-control { padding: .72rem .85rem; border-color: #dce1e9; }
+.form-control:focus { border-color: var(--komikin-orange); box-shadow: 0 0 0 .2rem rgba(255,138,50,.15); }
+.komikin-footer { background: #fff; border-top: 1px solid #e7eaf0; color: #687386; }
+.hero-panel { background: var(--komikin-navy); color: #fff; border-radius: 20px; padding: 36px; }
+.hero-panel p { color: #d2d8e3; }
+
+/* Phase 8: responsive polish and accessible interaction states */
+:root { color-scheme: light; }
+html { scroll-behavior: smooth; }
+body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+.btn, .form-control, .form-select { border-radius: 10px; }
+.btn:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+    outline: 3px solid rgba(255,138,50,.45); outline-offset: 2px;
+}
+.card { box-shadow: 0 6px 22px rgba(23,32,51,.045); }
+.table thead th { white-space: nowrap; font-size: .82rem; color: #596579; }
+.table td { vertical-align: middle; }
+.navbar .nav-link { transition: color .15s ease; }
+.navbar .nav-link:hover, .navbar .nav-link:focus { color: #ffb16f; }
+.comic-cover, .detail-cover, .cover-thumb { background-color: #e9edf4; }
+@media (max-width: 575.98px) {
+    .hero-panel { padding: 26px 22px; border-radius: 16px; }
+    .hero-panel .display-5 { font-size: 2rem; }
+    .auth-card, .stat-card { padding: 22px; }
+    .comic-cover, .comic-cover.cover-placeholder { height: 210px; }
+    .table td, .table th { padding: .7rem .65rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+}

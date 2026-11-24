@@ -1,0 +1,10 @@
+
+/* Phase 5 inventory and catalog */
+.comic-card { border-radius: 16px; overflow: hidden; transition: transform .18s ease, box-shadow .18s ease; }
+.comic-card:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(23,32,51,.12)!important; }
+.comic-cover { width:100%; height:260px; object-fit:cover; background:#e9edf4; }
+.cover-thumb { width:52px; height:68px; object-fit:cover; border-radius:7px; background:#e9edf4; }
+.cover-placeholder { display:flex; align-items:center; justify-content:center; background:linear-gradient(135deg,#172033,#344563); color:#ffb16f; font-weight:800; letter-spacing:.12em; }
+.comic-cover.cover-placeholder { height:260px; }
+.cover-preview { max-height:150px; max-width:100%; object-fit:contain; border-radius:10px; }
+.detail-cover { width:100%; max-height:520px; object-fit:contain; border-radius:12px; background:#f0f2f6; }

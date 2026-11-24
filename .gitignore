@@ -1,0 +1,65 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.env
+*.env.*
+*.txt
+
+# Local configuration overrides (keep shared application config tracked)
+config/*.local.php
+config/*-local.php
+config/*.local.ini
+
+# Logs and runtime output
+*.log
+logs/
+tmp/
+temp/
+cache/
+.cache/
+
+# User-uploaded files (keep the directory structure)
+uploads/*
+!uploads/.gitkeep
+!uploads/**/
+uploads/**/*.*
+!uploads/**/.gitkeep
+
+# Database exports, backups, and local database files
+dump-*.sql
+*.sql.gz
+*.sql.zip
+*.dump
+*.bak
+*.sqlite
+*.sqlite3
+
+# PHP dependencies
+/vendor/
+
+# JavaScript dependencies and build output (if added later)
+node_modules/
+dist/
+build/
+
+# Test and coverage output
+.phpunit.cache/
+.phpunit.result.cache
+coverage/
+.phpunit/
+
+# IDE and editor files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local development / server files
+.php-version
+.phpunit-watcher.yml
